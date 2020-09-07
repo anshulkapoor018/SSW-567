@@ -9,7 +9,7 @@ __author__ = "Anshul Kapoor"
 from math import sqrt
 import unittest
 
-def classifyTriangle(a, b, c):
+def classify_triangle(a, b, c):
     side1 = sqrt(a ** 2 + b ** 2)
     sideTotal = a + b + c
     if sideTotal < (2 * a) or sideTotal < (2 * b) or sideTotal < (2 * c):
