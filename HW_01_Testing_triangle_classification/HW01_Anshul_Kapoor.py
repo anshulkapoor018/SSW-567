@@ -26,7 +26,7 @@ def classify_triangle(a, b, c):
 
 
 def executeClassifyTriangle(a, b, c):
-    print('classifyTriangle(', a, ',', b, ',', c, ') = ', classifyTriangle(a, b, c), sep="")
+    print('classifyTriangle(', a, ',', b, ',', c, ') = ', classify_triangle(a, b, c), sep="")
 
 def main():
     executeClassifyTriangle(20, 21, 29)
@@ -35,12 +35,12 @@ def main():
 
 class TestTriangles(unittest.TestCase):
     def testingSet1(self):
-        self.assertEqual(classifyTriangle(20, 21, 29), 'Right', '20, 21, 29 is a Right triangle')
+        self.assertEqual(classify_triangle(20, 21, 29), 'Right', '20, 21, 29 is a Right triangle')
 
     def testingSet2(self):
-        self.assertEqual(classifyTriangle(1, 1, 1), 'Equilateral', '1,1,1 should be equilateral')
-        self.assertNotEqual(classifyTriangle(12, 12, 12), 'Isosceles', 'Should be Equilateral')
-        self.assertEqual(classifyTriangle(7, 15, 30), 'NotATriangle', 'Should be not be a Triangle')
+        self.assertEqual(classify_triangle(1, 1, 1), 'Equilateral', '1,1,1 should be equilateral')
+        self.assertNotEqual(classify_triangle(12, 12, 12), 'Isosceles', 'Should be Equilateral')
+        self.assertEqual(classify_triangle(7, 15, 30), 'NotATriangle', 'Should be not be a Triangle')
 
 
 if __name__ == '__main__':
