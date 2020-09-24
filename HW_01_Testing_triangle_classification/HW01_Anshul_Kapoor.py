@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/user_id/bin/env python
 
 """
 HW01_Anshul_Kapoor.py
@@ -30,7 +30,7 @@ def executeClassifyTriangle(a, b, c):
 
 def main():
     executeClassifyTriangle(20, 21, 29)
-    executeClassifyTriangle(1, 1, 1)
+    executeClassifyTriangle(3, 4, 5)
 
 
 class TestTriangles(unittest.TestCase):
@@ -45,4 +45,4 @@ class TestTriangles(unittest.TestCase):
 
 if __name__ == '__main__':
     main()
-    unittest.main(exit=False, verbosity=2)
+    # unittest.main(exit=False, verbosity=2)
